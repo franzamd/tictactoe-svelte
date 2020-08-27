@@ -1,4 +1,4 @@
-import { readable } from "svelte/store";
+import { readable } from 'svelte/store';
 
 let connection;
 let connectionTimer;
@@ -10,7 +10,7 @@ const connect = () => {
       connection = new WebSocket(process.env.wsUrl);
 
       connection.onclose = (e) => {
-        console.log(e, "closed");
+        console.log(e, 'closed');
         connectionTimer = setInterval(() => {
           connect();
         }, 500);
@@ -18,7 +18,7 @@ const connect = () => {
 
       connection.onopen = () => {
         clearInterval(connectionTimer);
-        console.log("connected");
+        console.log('connected');
       };
 
       connection.onmessage = (e) => {
@@ -26,7 +26,7 @@ const connect = () => {
       };
     }
   } catch (e) {
-    console.log(e, "logging error");
+    console.log(e, 'logging error');
   }
 };
 
