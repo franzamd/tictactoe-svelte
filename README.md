@@ -6,6 +6,7 @@
 
 This is TicTacToe App using Svelte & [node server](https://github.com/phptuts/tictactoe-server).It's is part tutorial of the course [Learn the Svelte JavaScript Framework - Full Course](https://www.youtube.com/watch?v=ujbE0mzX-CU&t=21210s)
 
+
 This is a project template for [Svelte](https://svelte.dev) apps. It lives at https://github.com/sveltejs/template.
 
 To create a new project based on this template using [degit](https://github.com/Rich-Harris/degit):
@@ -17,6 +18,9 @@ cd svelte-app
 
 *Note that you will need to have [Node.js](https://nodejs.org) installed.*
 
+## Demo
+
+[TicTacToe App](https://franzamd.github.io/tictactoe-svelte/)
 
 ## Get started
 
